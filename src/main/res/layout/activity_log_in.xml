@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogInActivity"
+    android:background="#1A8099">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#05657E"
+    app:titleTextColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/to_do_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="To Do List"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/email_address_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter your Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:drawableTint="#493DDE"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter your Password"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:drawableTint="#493DDE"
+        android:inputType="textPassword"
+        android:paddingBottom="15dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+       android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        app:backgroundTint="#493DDE"/>
+
+    <TextView
+        android:id="@+id/gotosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="Don't Have an Account?"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:indeterminateTint="#493DDE"
+        android:visibility="gone"
+
+        />
+
+
+
+
+</LinearLayout>

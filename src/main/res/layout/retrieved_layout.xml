@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="30dp"
+    app:cardElevation="30dp"
+    android:layout_margin="10dp"
+    android:background="#1A8099">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:backgroundTint="#1A8099"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#C2BDF6"
+            android:backgroundTint="#1A8099"
+            >
+
+            <TextView
+                android:id="@+id/date_cards"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="June 18, 2020"
+                android:gravity="center"
+                android:backgroundTint="#05657E"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1A8099">
+
+            <TextView
+                android:id="@+id/taskcards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Task"
+
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/descriptioncards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="6dp"
+                android:text="Description"
+                android:textSize="15sp"
+                android:maxLines="3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
